@@ -1,0 +1,124 @@
+body {
+	background-color: #14161F;
+}
+
+.borde {
+	width: 300px;
+	margin: 50px auto;
+	padding: 2px 2px 2px 2px;
+	border-radius: 22px;
+	background: linear-gradient(to bottom, #48D5E7, #F9A9FB);
+	box-shadow: 0px 0px 20px #48D5E7;
+	transition: transform 1s ease;
+}
+
+.borde:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 0px 35px #F9A9FB;
+}
+
+.card {
+	background-color: #2A2D3E;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.imagen {
+	height: 260px;
+	background-image: url("E:/UR/6 Semestre/WEB/CSS 3/Imagenes/Flash.png");
+	background-repeat: no-repeat;
+}
+
+.velocidad {
+	float: right;
+	margin: 15px 15px 0px 0px;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	border-radius: 20px;
+	background-color: #1E2130;
+	color: #FFFFFF;
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: transform 1s ease;
+}
+
+.velocidad:hover {
+	background-color: #D40000;
+	transform: scale(1.1);
+}
+
+.contenido {
+	padding: 20px 25px 25px 25px;
+}
+
+.contenido h3 {
+	margin: 0px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: #48D5E7;
+	text-transform: uppercase;
+}
+
+.contenido h1 {
+	margin: 10px 0px 10px 0px;
+	font-family: Verdana, sans-serif;
+	font-size: 36px;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.contenido p {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #B8BACB;
+	text-align: justify;
+}
+
+.poder {
+	margin: 20px 0px 20px 0px;
+	padding: 15px 15px 15px 15px;
+	border-radius: 12px;
+	background-color: #1E2130;
+	overflow: hidden;
+}
+
+.emoji {
+	float: left;
+	margin-right: 15px;
+	font-size: 32px;
+}
+
+.poder h4 {
+	margin: 0px;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.detalle {
+	font-family: Calibri, Verdana, sans-serif;
+	font-size: 13px;
+	color: #B8BACB;
+}
+
+.boton {
+	width: 246px;
+	padding: 15px 15px 15px 15px;
+	border: none;
+	border-radius: 12px;
+	background: linear-gradient(to right, #B76AFF, #3B82F6);
+	color: #FFFFFF;
+	font-family: Calibri, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 0px 0px 15px #B76AFF;
+	transition: transform 1s ease;
+}
+
+.boton:hover {
+	transform: scale(1.05);
+	background: linear-gradient(to right, #3B82F6, #B76AFF);
+}
