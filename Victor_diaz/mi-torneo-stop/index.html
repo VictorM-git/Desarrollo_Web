@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversidadSTOP</title>
+</head>
+<body>
+    <header>
+        <h1>Universidad STOP</h1>
+        <p>Letra de la ronda: U</p>
+        <a href="#respuestas">Ver hoja de respuestas</a>
+        <a href="#reglas">Ver reglas del torneo</a>
+    </header>
+
+    <main>
+        <h2>Tablero de la ronda U</h2>
+        <table border="1">
+            <caption>Respuestas de los jugadores para la letra U</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Jugador</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Lugar</th>
+                    <th scope="col">Animal</th>
+                    <th scope="col">Objeto</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Comida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ulises</th>
+                    <td>Uriel</td>
+                    <td>Ubaté</td>
+                    <td>Urraca</td>
+                    <td>Uniforme</td>
+                    <td>Unilever</td>
+                    <td>Uchuva</td>
+                </tr>
+                <tr>
+                    <th scope="row">Úrsula</th>
+                    <td>Úrsula</td>
+                    <td>Ushuaia</td>
+                    <td>Uapití</td>
+                    <td>Urna</td>
+                    <td>Uber</td>
+                    <td>Uva</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ubaldo</th>
+                    <td>Urbano</td>
+                    <td>Utrecht</td>
+                    <td>Urial</td>
+                    <td>Utensilio</td>
+                    <td>Under Armour</td>
+                    <td>Udon</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="respuestas">Hoja de respuestas</h2>
+        <form>
+            <fieldset>
+                <legend>Respuestas para la letra U</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Uriel" pattern="[UuÚú][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}" title="Escriba al menos tres letras y empiece con U." required>
+
+                <label for="lugar">Lugar:</label>
+                <input type="text" id="lugar" name="lugar" placeholder="Ubaté" pattern="[UuÚú][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}" title="Escriba al menos tres letras y empiece con U." required>
+
+                <label for="animal">Animal:</label>
+                <input type="text" id="animal" name="animal" placeholder="Urraca" pattern="[UuÚú][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}" title="Escriba al menos tres letras y empiece con U." required>
+
+                <label for="objeto">Objeto:</label>
+                <input type="text" id="objeto" name="objeto" placeholder="Uniforme" pattern="[UuÚú][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}" title="Escriba al menos tres letras y empiece con U." required>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" placeholder="Unilever" pattern="[UuÚú][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}" title="Escriba al menos tres letras y empiece con U." required>
+
+                <label for="comida">Comida:</label>
+                <input type="text" id="comida" name="comida" placeholder="Uchuva" pattern="[UuÚú][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}" title="Escriba al menos tres letras y empiece con U." required>
+            </fieldset>
+
+            <p>
+                <label for="letra">Letra:</label>
+                <select id="letra" name="letra">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                    <option>F</option>
+                    <option>G</option>
+                    <option>H</option>
+                    <option>I</option>
+                    <option>J</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>N</option>
+                    <option>O</option>
+                    <option>P</option>
+                    <option>R</option>
+                    <option>S</option>
+                    <option>T</option>
+                    <option selected>U</option>
+                    <option>V</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="ronda">Número de ronda:</label>
+                <input type="number" id="ronda" name="ronda" min="1" max="13" value="1" required>
+            </p>
+
+            <p>
+                <audio controls src="recursos/timbre.mp3"></audio>
+            </p>
+            <p>
+                <img src="recursos/escudo.avif" alt="Universidad STOP, escudo del torneo">
+            </p>
+
+            <button type="submit">¡STOP!</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+
+    <aside id="reglas">
+        <h2>Reglas del torneo</h2>
+        <OL TYPE="1">
+            <li>El parcial es individual. Cada estudiante entrega su propio repositorio.</li>
+            <li>Duración: 120 minutos exactos. El cronómetro es público y no se detiene.</li>
+            <li>La letra del torneo se sortea al minuto cero y es la misma para todo el grupo. Todo el contenido inventado debe empezar por esa letra.</li>
+            <li>Las rondas son secuenciales: lo que construye en una es el insumo de la siguiente.</li>
+            <li>Al final de cada ronda, todos hacen commit con el formato indicado por el profesor.</li>
+            <li>Se permite consultar documentación oficial.</li>
+            <li>No se permiten asistentes de inteligencia artificial, código propio de proyectos anteriores ni plantillas descargadas.</li>
+            <li>Todo se escribe durante el parcial, desde una carpeta vacía.</li>
+            <li>No se evalúa backend, bases de datos ni estado en React.</li>
+            <li>Cada estudiante tiene dos comodines PISTA y un comodín SALTO.</li>
+            <li>Si una ronda no funciona, documente en BITACORA.md qué intentó y qué error obtuvo.</li>
+            <li>La entrega se hace dentro del tiempo.</li>
+        </OL>
+
+        <h3>Categorías</h3>
+        <ul TYPE="square">
+            <li>Nombre</li>
+            <li>Lugar</li>
+            <li>Animal</li>
+            <li>Objeto</li>
+            <li>Marca</li>
+            <li>Comida</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Nombre: Victor Manuel Diaz Ramirez</p>
+        <p>Grupo #3</p>
+    </footer>
+</body>
+</html>
